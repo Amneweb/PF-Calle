@@ -3,7 +3,9 @@ Proyecto final del curso Desarrollo Web de Coderhouse
 
 **Consigna:** desarrollar un sitio web de 5 páginas con html y css utilizando BEM, Sass y animaciones, maquetado con grid y flexbox, y utilizando Bootstrap como framework.
 ## Qué es Adela Sailing
-Adela Sailing es un lugar ficticio para la organización de eventos de primer nivel del deporte de la vela. No existe, las fotos utilizadas son de diferentes lugares reales en el mundo, pero ninguno se llama Adela.-  
+El sitio web presentado en este trabajo es una sede ficticia para la organización de eventos de primer nivel del deporte de la vela. El lugar físico NO existe, las fotos utilizadas son de diferentes lugares reales en el mundo, pero ninguno se llama Adela.  
+**¿Qué lugares están fotografiados?** El Club Náutico Mar del Plata, el Iate Clube do Rio de Janeiro, el hotel Aranwa Paracas, en Perú; el Club Náutico Paraná, el Club Náutico Villa Constitución y el Club Náutico San Isidro.   
+Las fotos de personas son genéricas y no corresponden a nadie en particular.  
 ### ¿Cómo surgió la idea?
 1) **El nombre:**
    Existe un lugar que se llama Adela cerca de Chascomús, en Argentina, donde se practica kite, windsurf y demás actividades acuáticas, pero con mínima infraestructura en tierra.
