@@ -1,5 +1,6 @@
 # PF-Calle
-Proyecto final del curso Desarrollo Web de Coderhouse
+Proyecto final del curso Desarrollo Web de Coderhouse:  
+
 **Consigna:** desarrollar un sitio web de 5 páginas con html y css utilizando BEM, Sass y animaciones, maquetado con grid y flexbox, y utilizando Bootstrap como framework.
 ## Qué es Adela Sailing
 Adela Sailing es un lugar ficticio para la organización de eventos de primer nivel del deporte de la vela. No existe, las fotos utilizadas son de diferentes lugares reales en el mundo, pero ninguno se llama Adela.-  
