@@ -1,7 +1,7 @@
 {
-  "name": "misitioweb",
+  "name": "misitioweb-preentrega3-backup-pf",
   "version": "1.0.0",
-  "description": "Proyecto para Curso Desarrollo Web de Coderhouse. La pre entrega 2 contiene: * Hoja de estilos escrita parcialmente con notación BEM  * Archivo index con maquetado utilizando grid y flexbox en el cuerpo del contenido y bootstrap en el footer * Carousel en index con componente bootstrap * Páginas noticias, contacto y calendario con grid de bootstrap y footer también con bootstrap ## Para revisar Funcionamiento del menú hamburguesa en celulares",
+  "description": "Proyecto final curso Desarrollo Web en Coderhouse",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

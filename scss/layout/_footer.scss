@@ -31,7 +31,10 @@
             }
             &:hover {
                 transform:translateX(20px);
-        }
+            }
+            a:hover {
+                text-decoration:none;
+            }
         }
     }
     &__ul {
