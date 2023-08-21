@@ -1,5 +1,5 @@
 # PF-Calle
-Proyecto final del curso Desarrollo Web de Coderhouse:  
+Proyecto final del curso Desarrollo Web de Coderhouse  
 
 **Consigna:** desarrollar un sitio web de 5 páginas con html y css utilizando BEM, Sass y animaciones, maquetado con grid y flexbox, y utilizando Bootstrap como framework.
 ## Qué es Adela Sailing
