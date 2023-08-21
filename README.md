@@ -13,4 +13,6 @@ Las fotos de personas son genéricas y no corresponden a nadie en particular.
    En Italia existe una sede con las características de Adela Sailing, que se llama Fraglia Vela Riva, y se encuentra en el Lago di Garda, donde se hacen eventos de nivel olímpico, mundial y regional durante todo el año. Hay otras sedes similares en España, Holanda y Dinamarca, y varios clubes/organizaciones y municipalidades con proyectos similares a Adela. En Argentina, la sede que más se podría asemejar a Adela Sailing es la del Club Náutico Mar del Plata.
 3) **Idea final:**
    La idea del tema del sitio web se basó en Fraglia Vela Riva, en mi trabajo como secretaria de Comités Organizadores de campeonatos internacionales de distintas partes del mundo, y en mi trabajo administrativo en Martecna, fabricantes de embarcaciones deportivas (Optimists y Lasers NH).
+## Enlace al sitio cargado en un servidor
+https://martecna.com/adela.amneweb.com/
 
