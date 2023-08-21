@@ -1,0 +1,134 @@
+.intro {
+    background-color:var(--fondo-blanco);
+    @extend .padding-100;
+}
+.agua {
+    background-color:var(--fondo-gris);
+    &__h2 {
+        color:var(--texto-fondo-oscuro);
+    }
+    img {
+        height:100%;
+    }
+    &-izquierda {
+        @extend .padding-100;
+        &__p {
+            color:var(--texto-fondo-oscuro);
+        }
+    }
+    &-inferior {
+        @extend .padding-100;
+        &__h3 {
+            color:var(--texto-fondo-oscuro);
+            font-family:'Poppins', sans-serif;
+        }
+        &__p {
+            color:var(--texto-fondo-oscuro);
+        }
+        --bs-gutter-x:0px; /* para sacar gutter de bootstrap */
+        --bs-gutter-y:20px; /* para agregar gutter a bootstrap */
+    }
+}
+.staff {
+    margin:50px 30px;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    align-items:start;
+    &__div--img {
+        align-self:center;
+        width:80%;
+        &-oficial::before {
+            @include badge ("Oficial de regata",var(--texto-fondo-claro),var(--celeste-claro));
+            text-align: center;
+        }
+        &-juez::before {
+            @include badge ("Juez de regata",var(--texto-fondo-claro),var(--verde-claro));
+            text-align: center;
+        }
+        &-oficina::before {
+            @include badge ("oficina",var(--texto-fondo-claro),var(--fondo-blanco));
+            text-align: center;
+        }
+        &-logistica::before {
+            @include badge ("logistica",var(--texto-fondo-claro),var(--gradiente-original));
+            text-align: center;
+        }
+    }
+    &__img {
+        aspect-ratio: 1/1;
+        border-radius:50%;
+        border:solid 2px var(--texto-fondo-claro);
+        padding:8px;
+        margin-top:20px;
+    }
+    &__h3 {
+        white-space:pre-wrap;
+        color:var(--texto-fondo-oscuro);
+        text-align: center;
+    }
+    &__p {
+        color:var(--texto-fondo-oscuro);
+    }
+}
+@media screen and (max-width:767px) {
+    .staff {
+    margin:50px 0px;
+    }
+}
+.tierra {
+    background-color:var(--fondo-blanco);
+    &__h2 {
+        color:var(--texto-fondo-claro);
+    }
+    img {
+        height:100%;
+    }
+
+    &-derecha {
+        @extend .padding-100;
+        background-color:var(--fondo-blanco);
+        &__p {
+            color:var(--texto-fondo-claro);
+        }
+    }
+    &-izquierda {
+        background-color:var(--fondo-blanco);
+        }
+    &-inferior {
+        background-color:var(--fondo-gris);
+        @extend .padding-100;
+        &__h3 {
+            color:var(--texto-fondo-oscuro);
+            font-family:'Poppins', sans-serif;
+        }
+        &__p {
+            color:var(--texto-fondo-oscuro);
+        }
+        --bs-gutter-x:0px;
+        --bs-gutter-y:20px;
+    }
+}
+.reclutamiento {
+    &-izquierda {
+        color:var(--texto-fondo-oscuro);
+        @extend .padding-100;
+    }
+    &-derecha {
+        background:var(--gradiente-original);
+        color:var(--texto-fondo-claro);
+        padding:30px;
+    }
+    &__btn {
+        background-color:var(--fondo-gris);
+        @include btn-solido (var(--texto-fondo-claro),var(--gradiente-original),var(--texto-fondo-claro),var(--gradiente-alreves));
+        width:100%;
+        margin-top:20px;
+    }
+    &__form {
+        @extend .formcontainer;
+        label {
+            color: var(--texto-fondo-claro);
+        }
+    }
+}

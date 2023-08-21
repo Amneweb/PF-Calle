@@ -1,0 +1,105 @@
+.noticias-ultima {
+    background-color:var(--fondo-gris);
+    &__p {
+        color:var(--texto-gris);
+        margin-top:30px;
+    }
+    &__h2 {
+        color:var(--texto-fondo-oscuro);
+        font-family: 'Poppins', sans-serif;
+    }
+    &__img {
+        aspect-ratio: 2/1;   
+    } 
+    &__ul--lista-fecha {
+        list-style-type: none;
+        margin:50px 0 20px 0;
+        @include flex-between(nowrap);
+        @media screen and (max-width:767px){
+            flex-direction:column;
+        }
+    } 
+    &__li {
+        margin-right:30px;
+        font-size: small;
+    }
+    &__li::before {
+        font-family: "Font Awesome 6 Free";
+        margin-right:5px;
+        color: var(--texto-gris);
+    }
+    &__a {
+        color:var(--texto-gris);
+    }
+    &__p--btn {
+        margin-top:40px;
+        text-align: right;
+        font-size: small;
+    }
+    &__a--btn {
+        @include btn-solido (var(--texto-fondo-oscuro), var(--fondo-general),var(--verde-claro), var(--fondo-general));
+    }  
+}
+$news-information-icons: (
+"categoria":"\f542",
+"autor":"\f4ff",
+"fecha":"\f133"
+);
+@each $name, $content in $news-information-icons {
+    .noticias-ultima__li--#{$name}::before {
+        content:$content;
+    }
+}
+.noticias-secundarias {
+    background-color:var(--fondo-blanco);
+    &__p {
+        color:var(--texto-fondo-claro);
+        width:60%;
+    }
+    &__div--contenedor {
+        margin-bottom:20px;
+    }
+    &__div--borde {
+        @include separador-gradiente(4px, 20px);
+    }
+    &__imgcontainer {
+        width:35%;
+    }
+    &__img {
+        height:100%;
+    }
+    &__p--btn {
+        margin-top:10px;
+        text-align: right;
+        font-size: small;
+    }
+    &__a--btn {
+        @include btn-solido (var(--texto-fondo-claro),var(--fondo-blanco),var(--texto-fondo-claro),var(--gradiente-original));
+    }
+}
+
+.novedades-campeonatos {
+    background:var(--gradiente-alreves);
+    &__div {
+        width:50%;
+        text-align: center;
+    }
+    &__img {
+        background-color:var(--fondo-blanco);
+        align-self: center;
+        width:40%;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border:solid 1px #999;
+        padding:10px;
+    }
+    &__p {
+        margin:50px 30px;
+        font-size: small;
+    }    
+}
+@media screen and (max-width:570px) {
+    .novedades-campeonatos__img {
+        width:70%;
+    }
+}

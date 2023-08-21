@@ -1,0 +1,40 @@
+.formtexto {
+    background:var(--gradiente-original);
+    padding: 20px;
+    @extend %redondeado;
+    &__h3, 
+    &__p {
+        color:var(--texto-fondo-claro);
+    }
+    &__p--mapa {
+        @extend %recuadrado;
+    }
+}
+@media screen and (max-width:768px) {
+   .formtexto__p--mapa {
+       display:none;
+   }
+}
+.formcontainer  {
+    font-size:110%;
+    font-family:'Poppins', sans-serif;
+    float:right;
+    padding:0 20px;
+
+        label {
+            color: #ccc;
+        } 
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+            font-family:'Poppins', sans-serif;
+        }   
+    }
+    .contacto__btn {
+        @include btn-gradiente (100%);
+    }

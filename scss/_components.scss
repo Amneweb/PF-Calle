@@ -1,0 +1,175 @@
+@mixin btn-gradiente($btn-width) {
+    background:var(--gradiente-original);
+    padding:5px 10px;
+    border-radius:5px;
+    border: solid var(--celeste-claro) 1px;
+    align-self: end;
+    text-align: center;
+    font-family:'Poppins', sans-serif;
+    width:#{$btn-width};
+
+    &:hover {
+    background:var(--gradiente-alreves);
+    text-decoration: none;
+    }
+}
+@mixin btn-solido ($borde, $fondo, $borde-hover, $fondo-hover) {
+        border:solid 1px $borde;
+        padding:5px;
+        border-radius:5px;
+        margin-right:5px;
+        color: $borde;
+        background:$fondo;
+        &:hover {
+            border-color:$borde-hover;
+            text-decoration: none;
+            background: $fondo-hover;
+            color:$borde-hover;
+        }   
+    } 
+@mixin separador-gradiente ($height,$margin) {
+    height:$height;
+    background:var(--gradiente-original);
+    margin-bottom:$margin;
+}
+/* Carousel */
+.carousel__img {
+    aspect-ratio: 16/7;
+}
+.carousel-caption {
+    position:absolute;
+    padding:30px;
+    width:40%;
+    top:30%;
+    background-color:var(--fondo-blanco);
+    display: flex;
+    flex-direction:column;
+    left:45%;
+    bottom:auto;
+    @extend %redondeado;
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    .carousel-caption {
+        top:10%;
+    }
+}
+.carousel__p--titulo {
+    font-family:'DMSerifDisplay-Italic', serif;
+    font-size: 200%;
+}
+.carousel__p {
+    color:var(--texto-fondo-claro);
+}
+.carousel__a--boton {
+    @include btn-gradiente(auto);
+}
+/*header en páginas secundarias*/
+.titulo--paginas {
+    background-position:center;
+    height:200px;
+    padding:70px;
+    background-size:cover;
+
+        &__h1 {
+            text-align:center;
+            text-shadow:2px 2px 4px #000;
+            color:var(--texto-fondo-oscuro);
+        }
+}
+$page-h1-background: (
+    "quienes-somos":"../assets/imagenes/carousel1-low.jpg",
+    "contactanos":"../assets/imagenes/titulo-contacto.jpg",
+    "infraestructura":"../assets/imagenes/titulo-infraestructura.jpg",
+    "calendario":"../assets/imagenes/titulo-calendario.jpg",
+    "noticias":"../assets/imagenes/titulo-noticias.jpg",
+    "nosotros":"../assets/imagenes/titulo-nosotros.jpg"
+    );
+@each $name, $url in $page-h1-background {
+    .#{$name}-bkg {
+        background-image:url($url);
+    }
+}
+/*fin header en páginas secundarias*/
+/*cards en noticias, infraestructura y nosotros*/
+@mixin cards ($fondo,$width,$width-mobile,$section) {
+    background-color: var($fondo);
+    width:$width;
+    padding:40px 20px;
+    height: auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:start;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin:10px 10px;
+    @extend %redondeado;
+    @if $section=="facilities" {
+        @media screen and (max-width:992px) {
+            margin-bottom:40px;
+            width:$width-mobile;
+    }
+    } @else {
+    @media screen and (max-width:768px) {
+            margin-bottom:40px;
+            width:$width-mobile;
+    }
+    }
+}
+@mixin cardcontent($section-name) {
+    .#{$section-name} {
+        &__div {
+            margin-bottom:10px;
+        } 
+        &__ul {
+            @include flex-between(nowrap);
+            list-style-type: none;
+        }
+        &__img {
+            height:200px;
+        } 
+        &__icon {
+            margin-right:10px;
+        }
+        &__li {
+            font-size: var(--tamanio-fuente-80p);
+        }
+        &__a--categoria::before {
+            font-family: "Font Awesome 6 Free";
+            content:'\f542';
+            margin-right:5px;
+        }
+        &__a--btn {
+            @include btn-solido (var(--fondo-blanco), var(--texto-fondo-claro), var(--verde-claro),var(--fondo-general));
+        }
+    }
+}
+@mixin badge($content,$color,$background) {
+    content:$content;
+    background:$background;
+    color:$color;
+    border-radius:5px;
+    padding:5px;
+    font-size:0.7rem;
+    text-transform: uppercase;
+    margin-right:20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight:200;
+}
+@mixin big-list($color,$content,$color-hover,$font-size){
+    font-size:$font-size;
+    text-transform: uppercase;
+    padding:10px 0;
+    font-weight:700;
+    font-family:'Poppins', sans-serif;
+        &::before {
+            color:$color;
+            font-family:"Font Awesome 6 Free";
+            margin-right:30px;
+            content:$content;
+        }
+        a {
+            color:$color;
+            &:hover {
+                color:$color-hover;
+                }    
+        }
+}

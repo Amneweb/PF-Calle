@@ -1,0 +1,158 @@
+.parallax {
+    background-image: url(../assets/imagenes/fondo-fijo-azul.jpg);
+    @extend %fondo-fijo;
+    display:grid;
+    gap:20px;
+    grid-template-columns:33% 17% 1fr 33%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "marinas marinas rampas rampas"
+    "embarcaciones embarcaciones embarcaciones embarcaciones"
+    "parqueo parqueo parqueo vestuarios"
+    "restaurant oficinas oficinas oficinas";
+    width:100%;
+    @extend .padding-100;
+}
+@media screen and (max-width:768px) {
+    .parallax {
+        grid-template-rows:repeat(7, auto);
+        grid-template-areas: "marinas marinas marinas marinas"
+        "rampas rampas rampas rampas"
+        "embarcaciones embarcaciones embarcaciones embarcaciones"
+        "parqueo parqueo parqueo parqueo"
+        "vestuarios vestuarios vestuarios vestuarios"
+        "oficinas oficinas oficinas oficinas"
+        "restaurant restaurant restaurant restaurant";
+    }
+}
+$articles: "marinas","rampas","embarcaciones","parqueo","vestuarios","oficinas","restaurant";
+@each $article in $articles {
+    .#{$article} {
+        grid-area:#{$article};
+    }
+}
+.parallax {
+    &__article {
+        background-color:var(--fondo-blanco);
+        @extend %redondeado;
+        display:flex;
+        justify-content:start;
+        flex-direction:column;
+        padding:40px 20px;
+        @extend .shadow;
+            img {
+                aspect-ratio: 2/1;
+                margin-bottom:20px;
+            }
+    }
+    &__div {
+        display:flex;
+        &--vertical {
+            flex-direction:column;
+            justify-content: start;
+        }
+        &--horizontal {
+            flex-direction:row;
+            justify-content: space-between;
+            img {
+                width:40%;
+            }
+            .img--izquierda {
+                margin-right: 20px;
+            }
+            .img--derecha {
+                margin-left: 20px;
+            }  
+            }
+        @media screen and (max-width:768px) {
+            &--horizontal {
+                flex-direction:column;
+                justify-content: start;
+                img {
+                    width:100%;
+                }
+                .img--izquierda {
+                    margin-right: auto;
+                }
+                .img--derecha {
+                    margin-left: auto;
+                }  
+            }
+        }
+    }
+}
+    
+.gallery{
+    background-color:var(--fondo-gris);
+    &__h2 {
+        color:var(--texto-fondo-oscuro);
+    }
+    &__figure {
+        display:inline-block;
+        width:30%;
+        position:relative;
+        margin:10px;
+        @extend .shadow;
+
+        &:hover .gallery__div--overlay {
+            height:100%;
+        }
+    }
+    &__img {
+        display:block;
+        width:100%;
+        height:auto;
+    }
+    &__div--overlay {
+        position:absolute;
+        bottom:0;
+        left:0;
+        right:0;
+        background-color:var(--fondo-traslucido);
+        overflow:hidden;
+        width:100%;
+        height:0;
+        transition: .5s ease;
+    }
+    &__div--text {
+        color:var(--texto-fondo-oscuro);
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        p {
+        text-align: center;
+        font-weight:700;
+        }
+    }
+}
+@media screen and (max-width:991px){
+    .gallery__figure {
+        width:40%;  
+    }
+}
+.presentacion {
+    background-color:var(--fondo-blanco);
+    &__li {
+        list-style-type: none;
+        @include big-list (var(--texto-fondo-oscuro),"\f061",var(--verde-claro),200%);
+    }
+    &__iframe {
+        margin-top:50px;
+        aspect-ratio: 1.77;
+        width:100%;
+        height:auto;
+        object-fit: cover;
+    }
+    &__nav {
+        background-color:var(--fondo-general);
+    }
+    &__ul {
+        height:100%;
+        @include flex-between (nowrap);
+        flex-direction: column;
+    }
+}
+.separador {
+@include separador-gradiente(1px, 0);
+}
+

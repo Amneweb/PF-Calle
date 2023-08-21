@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sede para la organización de eventos de vela ligera de alta performance.⛵ Ponemos el personal, las embarcaciones, instalaciones, etc. Vos ponés el nombre del campeonato.">
+    <meta name="keywords" content="vela, campeonatos de vela, campeonatos internacionales, organización de campeonatos de vela, campeonatos de la World Sailing, Argentino de Optimist 2023, Mundial de Snipe 2024, infraestructura para campeonatos de vela, embarcaciones de comité de regatas, botes para entrenadores, elite de la vela mundial, ranking anual de la vela argentina, sede de eventos de vela en Argentina, 29er, Snipe, Optimist, Laser, ILCA, Campeonato Sudamericano ILCA 2023, 420, 470, 49er">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/imagenes/favicon.ico" type="image/x-icon">
+    <!-- Comienza Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+    <!-- Termina Fuentes Google -->
+    <!-- Empieza Font Awesome -->
+    <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="assets/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="assets/fontawesome/css/solid.css" rel="stylesheet">
+    <!-- Termina Font Awesome -->
+    <!-- Empieza Bootstrap --> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <!-- Termina Bootstrap -->
+    <!-- Estilo propio -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Termina estilo propio -->
+    <title>Organización de eventos de vela de primer nivel | ADELA SAILING</title>
+</head>
+<body>
+    <!-- Comienza el Header -->
+    <header class="header">
+        <a href="index.html" class="header__a--logo"><img class="header__img" src="assets/imagenes/adela-horizontal.png" alt="Logo Adela Sailing en encabezado"></a>
+        <input type="checkbox" class="nav-controller" id="nav-controller">
+        <label for="nav-controller" class="nav-controller-icon"><span class="nav-controller-icon__line"></span></label>
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="paginas/noticias.html">Noticias</a></li>
+                <li><a href="paginas/calendario.html">Calendario</a></li>
+                <li><a href="paginas/infraestructura.html">Infraestructura</a></li>
+                <li><a href="paginas/nosotros.html">Nosotros</a></li>
+                <li><a href="paginas/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <form action="" class="header__form"><input class="header__input" type="text" placeholder="¿qué estás buscando?"></form>
+    </header>
+    <!-- Termina el header -->
+    <!-- Empieza el carousel-->
+        <section class="carousel slide" id="carouselPrincipal">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/imagenes/optis-en-rampa.jpg" class="carousel__img d-block w-100" alt="Optimists esperando para bajar por la rampa">
+                    <div class="carousel-caption d-none d-md-flex redondeado">
+                        <p class="carousel__p carousel__p--titulo">Ranking 2023</p>
+                        <p class="carousel__p">Este año, el ranking ADELA se hará en 6 fechas entre marzo y noviembre. Seguinos en las redes para enterarte de las fechas definitivas.</p>
+                        <a href="" class="carousel__a--boton">Inscribite</a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/imagenes/optis-en-parqueo.jpg" class="carousel__img d-block w-100" alt="Area de parqueo llena de cascos de Optimist durante el Sudamericano de la clase">
+                    <div class="carousel-caption d-none d-md-flex redondeado">
+                        <p class="carousel__p carousel__p--titulo">Sudamericano de Optimist</p>
+                        <p class="carousel__p">Llegaron los más de 100 veleros Optimist que serán alquilados a las delegaciones extranjeras en un par de semanas.</p>
+                        <a href="" class="carousel__a--boton">Ver más</a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/imagenes/lasers-villa-constitucion.jpg" class="carousel__img d-block w-100" alt="Lasers esperando para salir al agua en Villa Constitución">
+                    <div class="carousel-caption d-none d-md-flex redondeado">
+                        <p class="carousel__p carousel__p--titulo">Se preparan los laseristas</p>
+                        <p class="carousel__p">El grupo de laseristas de Villa Constitución se entrena para el Ranking Adela. Prometen ofrecer una dura pelea a los favoritos.</p>
+                        <a href="#" class="carousel__a--boton">Saber más</a>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+        </section>
+        <!-- Termina el carousel -->
+    <!-- Empiezan la secciones, maquetado con grid y flex-->
+    <section class="main-grid">
+        <section class="main__grid-item welcome">
+             <aside class="welcome__div--img">
+                <img class="welcome__img" src="assets/imagenes/adelasinpalabras.png" alt="Letra A del logo de Adela">
+            </aside>
+            <article class="welcome__div--texto">
+                <h1 class="welcome__h1">Bienvenidos...</h1>
+                <p class="welcome__p">...a ADELA SAILING: un lugar, una experiencia deportiva única. Todo lo que los competidores de elite de la vela mundial esperan de la sede y los organizadores de un evento de primer nivel.</p>
+                <p class="welcome__p">ADELA SAILING es una empresa dedicada a la organización de eventos deportivos de vela de alto nivel, con una sede fija con infraestructura y tecnología de avanzada. Nos enfocamos principalmente en campeonatos y clínicas de clases monotipo de menos de 20 pies de eslora.</p>
+                <p class="welcome__p">¿Querés saber más? Navegá por las aguas de Adela sailing online a través del menú superior <i class="fa-solid fa-arrow-up"></i> o desplazándote hacia abajo <i class="fa-solid fa-arrow-down"></i> por esta misma página.</p>
+            </article>  
+        </section>
+        <section class="main__grid-item events">
+             <h2 class="events__h2">Eventos 2023</h2>
+            <ul class="events__ul">
+                <li class="events__li"><a href=""><img class="events__img" src="assets/imagenes/logos-campeonatos/otonio2023.png" alt="logo Campeonato Otoño 2023"></a></li>
+                <li class="events__li"><a href=""><img class="events__img" src="assets/imagenes/logos-campeonatos/mardel2023.png" alt="logo SIY 2023"></a></li>
+                <li class="events__li"><a href=""><img class="events__img" src="assets/imagenes/logos-campeonatos/suda2023.png" alt="logo Suda Perú 2023"></a></li>
+                <li class="events__li"><a href=""><img class="events__img" src="assets/imagenes/logos-campeonatos/yco2021.png" alt="logo Gran Prix Luis A Cerrato"></a></li>
+                <li class="events__li"><a href=""><img class="events__img" src="assets/imagenes/logos-campeonatos/cuba2019.png" alt="logo Metropolitano"></a></li>
+            </ul>
+        </section>
+        <section class="main__grid-item news">
+            <h2 class="news__h2">Noticias</h2>
+            <div class="grid-item__subcontenedor">
+                <article class="news__article redondeado">
+                    <div class="news__div">
+                        <ul class="news__ul">
+                            <li class="news__li">2 de julio de 2023</li>
+                            <li class="news__li"><a class="news__a--categoria">Campeonatos</a></li>
+                        </ul>
+                    </div>
+                    <div class="news__div"><img class="news__img" src="assets/imagenes/comite-largada-29er.jpg" alt="Largada de clase 29er con embarcación de comité"></div>
+                    <div class="news__div"><h4>Comienza el mundial de 29er</h4></div>
+                    <div class="news__div"><p>Este domingo es el día oficial de llegada de las delegaciones.</p></div>
+                    <div>
+                        <ul class="news__ul">
+                            <li class="news__li"><i class="fa-brands fa-facebook news__icon"></i><i class="fa-brands fa-instagram news__icon"></i><i class="fa-solid fa-heart news__icon"></i><i class="fa-brands fa-twitter news__icon"></i></li>
+                            <li class="news__li"><a class="news__a--btn" href="">Ver más</a></li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="news__article">
+                    <div class="news__div">
+                        <ul class="news__ul">
+                            <li class="news__li">2 de julio de 2023</li>
+                            <li class="news__li"><a class="news__a--categoria">Campeonatos</a></li>
+                        </ul>
+                    </div>
+                    <div class="news__div"><img class="news__img" src="assets/imagenes/comision-regata.jpg" alt="Equipo de pin de llegada de Comisión de regata en mundial de Optimist"></div>
+                    <div class="news__div"><h4>Entrenamiento del Comité de Regatas</h4></div>
+                    <div class="news__div"><p>El Comité a cargo del próximo mundial se prepara para el desafío de largar 200 barcos.</p></div>
+                    <div>
+                        <ul class="news__ul">
+                            <li class="news__li"><i class="fa-brands fa-facebook news__icon"></i><i class="fa-brands fa-instagram news__icon"></i><i class="fa-solid fa-heart news__icon"></i><i class="fa-brands fa-twitter news__icon"></i></li>
+                            <li class="news__li"><a class="news__a--btn" href="">Ver más</a></li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="news__article redondeado">
+                    <div class="news__div">
+                        <ul class="news__ul">
+                            <li class="news__li">2 de julio de 2023</li>
+                            <li class="news__li"><a class="news__a--categoria">Campeonatos</a></li>
+                        </ul>
+                    </div>
+                    <div class="news__div"><img class="news__img" src="assets/imagenes/banderas.jpg" alt="Mástil de señales durante campeonato de Optimist"></div>
+                    <div class="news__div"><h4>Banderas arriba para 2024</h4></div>
+                    <div class="news__div"><p>Este domingo es el día oficial de llegada de las delegaciones.</p></div>
+                    <div>
+                        <ul class="news__ul">
+                            <li class="news__li"><i class="fa-brands fa-facebook news__icon"></i><i class="fa-brands fa-instagram news__icon"></i><i class="fa-solid fa-heart news__icon"></i><i class="fa-brands fa-twitter news__icon"></i></li>
+                            <li class="news__li"><a class="news__a--btn" href="">Ver más</a></li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="main__grid-item contact">
+            <h2 class="contact__h2">Qué ofrecemos</h2>
+            <p class="contact__p">En Adela podes organizar desde clinicas particulares con un solo alumno hasta mundiales de 300 competidores. Para eso contamos con un espacio de parqueo de 2000m2 y embarcaciones de entrenadores, seguridad y comision de regatas adecuadas a las condiciones de la cancha.</p>
+        </section>
+        <section class="main__grid-item competitor">
+                <h3 class="competitor__h3">¿Sos competidor?</h3>
+                <p class="competitor__p">Si sos competidor y llegaste hasta acá porque querés participar en algún evento, hacé click en el botón de abajo para ir al calendario y elegir tu campeonato. Si no está en el listado, por favor escribinos a...</p>
+                <p class="competitor__p--btn"><a href="" class="competitor__btn">Calendario</a></p>
+        </section>
+        <section class="main__grid-item donde">
+            <h2>Dónde</h2>
+            <p>Estamos en un lugar privilegiado para la navegación deportiva, no sólo por las condiciones de ola y viento, sino por las opciones de alojamiento y esparcimiento de la ciudad.</p>
+            <h4>Características climáticas promedio en el año</h4>
+            <ul>
+                <li>Viento de 12 nudos del S / SE, con rachas de hasta 30 nudos.</li>
+                <li>Corriente menor a 2 nudos</li>
+                <li>Ola no menor a 1m</li>
+            </ul>
+            <div class="donde__div--direccion">
+                <p>Dirección: Av Antártida Argentina......</p>
+                <p>Teléfono:</p>
+                <p>Correo electrónico: info@adelasailing.com.ar</p>
+            </div>        
+        </section>
+        <section class="main__grid-item mapa">
+        </section>
+        <section class="main__grid-item facilities">
+            <h2 class="facilities__h2">Infraestructura</h2>
+            <div class="grid-item__subcontenedor grid-item__subcontenedor--facilities">
+                <article class="facilities__article">
+                    <figure>
+                        <img class="facilities__img" src="assets/imagenes/infraestructura/4-parqueo-optis.jpg" alt="Area de parqueo de Optimist llena de cascos dados vuelta">
+                        <figcaption class="facilities__figcaption"><h4>Plumas y rampas</h4><p class="facilities__p">Contamos con 2 plumas y rampas para bajar 100 barcos en 1 hora.</p></figcaption>
+                    </figure>
+                </article>
+                <article class="facilities__article">
+                    <figure>
+                        <img class="facilities__img" src="assets/imagenes/infraestructura/5-lasers-rampa.jpg" alt="Rampa zona Lasers y barcos ya armados, esperando para bajar">
+                        <figcaption class="facilities__figcaption"><h4>Plumas y rampas</h4><p class="facilities__p">Contamos con 2 plumas y rampas para bajar 100 barcos en 1 hora.</p></figcaption>
+                    </figure>
+                </article>
+                <article class="facilities__article">
+                    <figure>
+                        <img class="facilities__img" src="assets/imagenes/infraestructura/10-botes-de-goma.jpg" alt="Botes de goma de entrenadores y organizadores en marina antes de la salida al agua">
+                        <figcaption class="facilities__figcaption"><h4>Botes de goma</h4><p class="facilities__p">Contamos con 2 plumas y rampas para bajar 100 barcos en 1 hora.</p></figcaption>
+                    </figure>
+                </article>
+                <article class="facilities__article">
+                    <figure>
+                        <img class="facilities__img" src="assets/imagenes/infraestructura/7-parqueo-mardel.jpg" alt="Plumas">
+                        <figcaption class="facilities__figcaption"><h4>Plumas y rampas</h4><p class="facilities__p">Contamos con 2 plumas y rampas para bajar 100 barcos en 1 hora.</p></figcaption>
+                    </figure>
+                </article>
+                <article class="facilities__article">
+                    <figure>
+                        <img class="facilities__img" src="assets/imagenes/infraestructura/3-mesas-bancos.jpg" alt="Zona de recreo en tierra, con bancos y mesas para merendar o descansar">
+                        <figcaption class="facilities__figcaption"><h4>Plumas y rampas</h4><p class="facilities__p">Contamos con 2 plumas y rampas para bajar 100 barcos en 1 hora.</p></figcaption>
+                    </figure>
+                </article>
+                <article class="facilities__article">
+                    <figure>
+                        <img class="facilities__img" src="assets/imagenes/infraestructura/9-medicion-agua.jpg" alt="Embarcación de medición durante el selectivo al mundial de Optimist con medidor y competidores en el proceso de medición">
+                        <figcaption class="facilities__figcaption"><h4>Plumas y rampas</h4><p class="facilities__p">Contamos con 2 plumas y rampas para bajar 100 barcos en 1 hora.</p></figcaption>
+                    </figure>
+                </article>
+                
+            </div>
+        </section>
+        <section class="main__grid-item nosotros">
+            <h2 class="nosotros__h2">Nosotros</h2>
+            <div class="grid-item__subcontenedor">
+                <article class="nosotros__article redondeado">
+                    <img class="nosotros__img" src="assets/imagenes/equipo-tierra.png" alt="Imagen con las fotos tipo carnet de miembros del equipo de tierra del comité organizador">
+                    <h4 class="nosotros__h4">Equipo de tierra</h4>
+                    <p class="nosotros__p">Nuestro equipo de tierra se encarga de todo lo referido a la logística en la sede mientras los competidores se encuentran en tierra: organización del área de parqueo, señales en el mástil, horarios de izado de banderas, ubicación de trailers, coordinación con marinería, etc</p>
+                </article>
+                <article class="nosotros__article redondeado">
+                    <img class="nosotros__img" src="assets/imagenes/equipo-tierra.png" alt="Imagen con las fotos tipo carnet de miembros del equipo de agua del comité organizador">
+                    <h4 class="nosotros__h4">Equipo de agua</h4>
+                    <p class="nosotros__p">Nuestro equipo de tierra se encarga de todo lo referido a la logística en la sede mientras los competidores se encuentran en tierra: organización del área de parqueo, señales en el mástil, horarios de izado de banderas, ubicación de trailers, coordinación con marinería, etc</p>
+                </article>
+                <article class="nosotros__article redondeado">
+                    <img class="nosotros__img" src="assets/imagenes/equipo-tierra.png" alt="Imagen con las fotos tipo carnet de miembros de la secretaría de Adela">
+                    <h4 class="nosotros__h4">Oficinas e inscripciones</h4>
+                    <p class="nosotros__p">Nuestro equipo de tierra se encarga de todo lo referido a la logística en la sede mientras los competidores se encuentran en tierra: organización del área de parqueo, señales en el mástil, horarios de izado de banderas, ubicación de trailers, coordinación con marinería, etc</p>
+                </article>
+            </div>
+        </section>
+        <section class="main__grid-item optativas">
+            <h2>Experiencias optativas</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quos ex, dolor numquam repellendus in? Doloribus dolore recusandae minima sapiente exercitationem praesentium sequi commodi voluptas! Corrupti asperiores voluptatem magni eveniet.</p>
+            <div class="grid-item__subcontenedor">
+                <article class="optativas__article">
+                    <i class="fa-solid fa-map-location-dot optativas__icon"></i>
+                    <h4 class="optativas__h4">Tracking</h4>
+                    <p class="optativas__p">Junto a Trac trac, la empresa danesa especializada en tracking de eventos de vela, podés ofrecer este servicio en tu campeonato.</p>
+                </article>
+                <article class="optativas__article">
+                    <i class="fa-solid fa-desktop optativas__icon"></i>
+                    <h4 class="optativas__h4">Website dedicado</h4>
+                    <p class="optativas__p">Te diseñamos y alojamos un website exclusivo para tu evento.</p>
+                </article>
+                <article class="optativas__article">
+                    <i class="fa-solid fa-photo-film optativas__icon"></i>
+                    <h4 class="optativas__h4">Fotografía y video</h4>
+                    <p class="optativas__p">Los mejores fotógrafos de vela internacionales pueden ser fotógrafos oficiales del campeonato.</p>
+                </article>
+            </div>
+        </section>
+    </section>
+    <!-- Empieza el footer-->
+    <section class="container-fluid">
+        <section class="row footer flex-row d-flex justify-items-between">
+            <nav class="col-12 col-md-6 footer__nav">
+                    <ul class="footer__ul">
+                        <li class="footer__li--primera"><a class="footer__a" href="">calendario</a></li>
+                        <li class="footer__li--primera"><a class="footer__a" href="">Infraestructura</a></li>
+                        <li class="footer__li--primera"><a class="footer__a" href="">contacto</a></li>
+                        <li class="footer__li--primera"><a class="footer__a" href="">noticias</a></li>
+                        <li class="footer__li--primera"><a class="footer__a" href="">nosotros</a></li>
+                    </ul>
+            </nav>
+            <aside class="col-12 col-md-6 footer--formulario">
+                <h2 class="footer__h2">Newsletter</h2>
+                <p class="footer__p">Suscribite a nuestro newsletter y enterate de todas las novedades de Adelan Sailing</p>
+                <form class="footer__form" action="">
+                    <input type="text" name="email" id="email" placeholder="Ingresá tu email">
+                    <input type="submit" value="Enviar" class="footer__btn">
+                </form>
+                <p class="footer__p my-3">O mandanos un email a adela.sailing@...</p>
+                <p class="footer__p my-3">También podés mandar un whatsapp al +54 9 11...</p>
+            </aside>
+        </section>
+        <section class="row footer flex-row d-flex justify-items-between">   
+        <div class="col-12 col-md-4">
+            <nav class="footer__nav">
+                <ul class="footer__ul">
+                     <li class="footer__li"><a class="footer__a" href="">Si sos competidor</a></li>
+                     <li class="footer__li"><a class="footer__a" href="">Si sos organizador</a></li>
+                     <li class="footer__li"><a class="footer__a" href="">Conocé nuestro equipo de trabajo</a></li>
+                     <li class="footer__li"><a class="footer__a" href="">Contratanos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-12 col-md-4">
+            <nav class="footer__nav">
+                <ul class="footer__ul">
+                     <li class="footer__li"><a class="footer__a" href="">Inscripciones</a></li>
+                     <li class="footer__li"><a class="footer__a" href="">Documentación</a></li>
+                     <li class="footer__li"><a class="footer__a" href="">Tablero oficial de avisos</a></li>
+                     <li class="footer__li"><a class="footer__a" href="">Protestas</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-12 col-md-4">
+            <nav class="footer__nav">
+                <ul class="footer__ul">
+                    <li class="footer__li--pagos"><a class="footer__a" href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="footer__li--pagos"><a class="footer__a" href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="footer__li--pagos"><a class="footer__a" href=""><i class="fa-brands fa-tiktok"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+        </section>
+    </section>
+    <!-- Termina el footer-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+    <script>
+        const myCarouselElement = document.querySelector('#carouselPrincipal')
+            const carousel = new bootstrap.Carousel(myCarouselElement, {
+            })
+    </script>
+</body>
+</html>

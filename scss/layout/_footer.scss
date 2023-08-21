@@ -1,0 +1,82 @@
+.footer {
+    padding:50px;
+    &__a {
+        color:var(--texto-fondo-oscuro);
+        &:hover {
+            text-decoration:underline;
+            color:var(--verde-claro);
+        }    
+    }
+    &__li {
+        padding: 10px 0;
+
+        &--pagos {
+            display: inline;
+            padding:20px 20px;
+            font-size: 200%;
+        }
+        &--primera {
+            font-size:300%;
+            text-transform: uppercase;
+            padding:10px 0;
+            font-weight:700;
+            font-family:'Poppins', sans-serif;
+            transition: .4s ease;
+
+            &::after {
+                color:var(--texto-fondo-oscuro);
+                font-family:"Font Awesome 6 Free";
+                margin-left:30px;
+                content: '\f178';
+            }
+            &:hover {
+                transform:translateX(20px);
+        }
+        }
+    }
+    &__ul {
+        list-style-type: none;
+        padding:0;
+    }
+    &__p {
+        color:var(--texto-gris);
+    }
+    &__h2 {
+        color:var(--texto-fondo-oscuro);
+    }
+    &__btn {
+        @include btn-gradiente(100%);
+    }
+    &--formulario {
+        background-image:url(../assets/imagenes/ondas-fondo.png);
+        background-position:right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    } 
+    &__form {
+        input[type=text] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 20px 0 20px 0;
+            resize: vertical;
+        }
+    }    
+}
+@media screen and (max-width:1200px) {
+    .footer {
+        padding:20px;
+
+        &__li--primera {
+            font-size:180%;
+        }
+        &__ul {
+            padding-top:30px;
+        }
+        &--formulario {
+            padding:50px 20px;
+            order:-1;
+        }
+    }
+}

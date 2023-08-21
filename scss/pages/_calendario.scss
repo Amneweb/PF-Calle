@@ -1,0 +1,93 @@
+.campeonato-actual{
+    background-color:var(--fondo-blanco);
+}
+.actual {
+    &__img {
+        aspect-ratio: 2/1;
+        object-fit:cover;
+        overflow:hidden;
+    }
+    &__p{
+        margin:10px 0;
+        text-align: left;
+    }
+    &__span {
+        font-weight:bold;
+        margin-right: 10px;
+    }
+    &__p--banner::before {
+        @include badge ("ahora",var(--texto-fondo-oscuro),var(--fondo-general));
+    }
+}
+.futuro {
+    color:var(--texto-fondo-oscuro);
+    &__h3--general {
+        font-family: 'Poppins',sans-serif;
+        color:var(--texto-fondo-oscuro);
+        margin-bottom:50px;
+    }
+    &__p--banner {
+        margin-bottom:10px;
+    &::before {
+        @include badge("en breve",var(--texto-fondo-claro),var(--gradiente-original));
+        }
+    }
+    &__p{
+        margin:10px 0;
+        text-align: left;
+    }
+    &__img {
+        height:100%;                
+        overflow:hidden;
+        @media screen and (max-width:991px) {
+            aspect-ratio:2/1.8;
+        }
+    }
+    &__span {
+        font-weight:bold;
+        margin-right: 20px;
+    }
+    &__p--boton{
+        text-align: right;
+    }
+}
+.futuro__btn {
+    @include btn-solido (var(--texto-fondo-oscuro),var(--fondo-general),var(--texto-fondo-claro),var(--gradiente-original));
+}
+@media screen and (max-width:991px) {
+    .futuro__div,
+    .pasado__div,
+    .actual__div {
+        margin-bottom:30px;
+    }
+}
+.pasado {
+    color:var(--texto-fondo-oscuro);
+    &__p--banner {
+        margin-bottom:10px;
+    &::before {
+        @include badge("pasado",var(--texto-fondo-claro),var(--texto-gris));
+        }
+    }
+    &__p {
+        margin:10px 0;
+        text-align: left;
+        opacity:50%;
+    }
+    &__p--fecha {
+        font-size: 0.8rem;
+        margin-bottom:10px;
+    }
+    &__h4--titulo {
+        font-family: "Poppins", sans-serif;
+        font-weight:bold;
+        opacity:80%;
+    }
+    &__a{
+        color:var(--texto-fondo-oscuro);
+    }
+}
+.separador {
+    @include separador-gradiente (1px,inherit);
+}
+  

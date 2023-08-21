@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Contactate con nosotros para organizar un campeonato de vela con el mejor nivel internacional. Completá el formulario y te responderemos y asesoraremos.">
+        <meta name="keywords" content="formulario de contacto de Adela Sailing, asesoramiento sobre organización de eventos de vela, reserva de fechas para campeonatos de vela, fechas de campeonatos de vela, calendario de eventos de vela en Argentina, documentación de campeonatos de vela, inscripciones a campeonatos, contratación de sede para campeonatos de vela, firma de contrato con Adela Sailing">
+        <!-- favicon -->
+        <link rel="shortcut icon" href="../assets/imagenes/favicon.ico" type="image/x-icon">
+        <!-- Comienza Fuentes Google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+        <!-- Termina Fuentes Google -->
+        <!-- Empieza Font Awesome -->
+        <link href="../assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+        <link href="../assets/fontawesome/css/brands.css" rel="stylesheet">
+        <link href="../assets/fontawesome/css/solid.css" rel="stylesheet">
+        <!-- Termina Font Awesome -->
+        <link rel="stylesheet" href="../css/bootstrap-grid.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Contactate con nosotros y reservá fecha | ADELA SAILING</title>
+    </head>
+    <body>
+        <!-- Comienza el Header -->
+        <header class="header">
+            <a href="../index.html" class="header__a--logo"><img class="header__img" src="../assets/imagenes/adela-horizontal.png" alt="Logo Adela Sailing en header"></a>
+            <input type="checkbox" class="nav-controller" id="nav-controller">
+            <label for="nav-controller" class="nav-controller-icon"><span class="nav-controller-icon__line"></span></label>
+            <nav class="nav">
+                <ul class="nav__ul">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="calendario.html">Calendario</a></li>
+                    <li><a href="infraestructura.html">Infraestructura</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <form action="" class="header__form"><input class="header__input" type="text" placeholder="¿qué estás buscando?"></form>
+        </header>
+        <!-- Termina el header -->
+        <!-- Empieza el cuerpo de la página-->
+        <section class="container-fluid container-fluid--modificado">
+            <div class="espaciador"></div>
+            <div class="row">
+                <section class="col titulo--paginas contactanos-bkg">
+                    <h1 class="titulo--paginas__h1">Contáctenos</h1>
+                </section>
+            </div>
+            <div class="row p-5">
+                <aside class="col-12 col-lg-6 formtexto">
+                    <h3 class="formtexto__h3">Datos</h3>
+                    <p class="formtexto__p">Para contactarte con nosotros, completá el formulario, o utilizá alguno de los medios de contacto a continuación:</p>
+                    <p class="formtexto__p"><i class="fa-brands fa-whatsapp"></i> +54 9 11 66...</p>
+                    <p class="formtexto__p"><i class="fa-brands fa-instagram"></i> mar.tecna</p>
+                    <p class="formtexto__p"><i class="fa-solid fa-phone"></i> +54 9 11 66...</p>
+                    <p class="formtexto__p"><i class="fa-solid fa-envelope"></i> info@adelasailing.com</p>
+                    <p class="formtexto__p--mapa"><img src="../assets/imagenes/map.jpg" alt="Mapa de ubicación de la sede de Adela y área de regata."></p>
+                </aside>
+                <form class="col-12 col-lg-6 contactform formcontainer" action="">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingresá sólo tu nombre">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ingresá sólo tu apellido">
+                    <label for="email">Casilla de correo</label>
+                    <input type="text" name="correo" id="correo" placeholder="Verificá el formato correcto">
+                    <label for="country">Seleccioná la clase para la que te interesaría hacer un evento</label>
+                    <select id="clase" name="clase" title="clase">
+                            <option value="optimist">OPTIMIST</option>
+                            <option value="420">420</option>
+                            <option value="ilca">LASER / ILCA</option>
+                            <option value="29er">29er</option>
+                    </select>
+                    <label for="email">Comentarios</label>
+                    <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Dejanos tu comentario"></textarea>
+                    <input type="submit" value="Enviar" class="contacto__btn">
+                </form>
+            </div>
+        <!-- Termina el cuerpo de la página-->
+        <!-- Empieza el footer-->
+            <section class="row footer flex-row d-flex justify-items-between">
+                <nav class="col-12 col-md-6 footer__nav">
+                        <ul class="footer__ul">
+                            <li class="footer__li--primera"><a class="footer__a" href="">calendario</a></li>
+                            <li class="footer__li--primera"><a class="footer__a" href="">Infraestructura</a></li>
+                            <li class="footer__li--primera"><a class="footer__a" href="">contacto</a></li>
+                            <li class="footer__li--primera"><a class="footer__a" href="">noticias</a></li>
+                            <li class="footer__li--primera"><a class="footer__a" href="">nosotros</a></li>
+                        </ul>
+                </nav>
+                <aside class="col-12 col-md-6 footer--formulario">
+                    <h2 class="footer__h2">Newsletter</h2>
+                    <p class="footer__p">Suscribite a nuestro newsletter y enterate de todas las novedades de Adelan Sailing</p>
+                    <form class="footer__form" action="">
+                        <input type="text" name="email" id="email" placeholder="Ingresá tu email">
+                        <input type="submit" value="Enviar" class="footer__btn">
+                    </form>
+                    <p class="footer__p my-3">O mandanos un email a adela.sailing@...</p>
+                    <p class="footer__p my-3">También podés mandar un whatsapp al +54 9 11...</p>
+                </aside>
+            </section>
+            <section class="row footer flex-row d-flex justify-items-between">   
+                <div class="col-12 col-md-4">
+                    <nav class="footer__nav">
+                        <ul class="footer__ul">
+                            <li class="footer__li"><a class="footer__a" href="">Si sos competidor</a></li>
+                            <li class="footer__li"><a class="footer__a" href="">Si sos organizador</a></li>
+                            <li class="footer__li"><a class="footer__a" href="">Conocé nuestro equipo de trabajo</a></li>
+                            <li class="footer__li"><a class="footer__a" href="">Contratanos</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-12 col-md-4">
+                    <nav class="footer__nav">
+                        <ul class="footer__ul">
+                            <li class="footer__li"><a class="footer__a" href="">Inscripciones</a></li>
+                            <li class="footer__li"><a class="footer__a" href="">Documentación</a></li>
+                            <li class="footer__li"><a class="footer__a" href="">Tablero oficial de avisos</a></li>
+                            <li class="footer__li"><a class="footer__a" href="">Protestas</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-12 col-md-4">
+                    <nav class="footer__nav">
+                        <ul class="footer__ul">
+                            <li class="footer__li--pagos"><a class="footer__a" href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            <li class="footer__li--pagos"><a class="footer__a" href=""><i class="fa-brands fa-facebook"></i></a></li>
+                            <li class="footer__li--pagos"><a class="footer__a" href=""><i class="fa-brands fa-tiktok"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+            <!-- Termina el footer-->
+        </section>
+    </body>
+</html>
